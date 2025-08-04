@@ -62,12 +62,62 @@ h1.section-text {
 p.section-text {
   font-family: 'monospace', monospace;
   text-align: end;
+  margin-left: 20%;
 }
 
 p.about-text {
   font-family: 'monospace', monospace;
   text-align: start;
   margin: 2dvh;
+}
+
+#software-div {
+  background-image: url('software.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
+}
+
+#hardware-div {
+  background-image: url('hardware.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
+}
+
+#hackclub-keyboard-div {
+  background-image: url('hardware/hackclub-keyboard.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
+}
+
+#spotipad-div {
+  background-image: url('hardware/spotipad.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
+}
+
+#spark-carrier-div {
+  background-image: url('hardware/spark-carrier.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
+}
+
+#emberadhd-div {
+  background-image: url('software/emberadhd.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
+}
+
+#portfolio-div {
+  background-image: url('software/portfolio-website.png');
+  background-repeat: no-repeat;
+  background-size: 20% auto;
+  background-position: left center;
 }
 
 .section-sub {
