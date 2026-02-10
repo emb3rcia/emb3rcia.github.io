@@ -8,24 +8,29 @@ function MenuBar() {
     const navigate = useNavigate();
 
     return (
-        <div className="MENU-WRAPPER">
-            <div className="HOME-BUTTON"
-                 onClick={() => navigate("/")}
-            >
-                <HomeIcon/>
+        <div className="w-full h-32px flex justify-center-safe bg-[#d4d2d2] dark:bg-[#111111] space">
+            <div className="flex items-center">
+                <div className="HOME-BUTTON"
+                     onClick={() => navigate("/")}
+                >
+                    <HomeIcon/>
+                </div>
+                <span className="ml-1">Ember</span>
             </div>
-            <span className="SITE-TITLE">Ember</span>
-            <div className="CONTACT-BUTTON"
-                 onClick={() => navigate("/contact")}
-            >
-                <span>Contact</span>
-                <ContactIcon/>
-            </div>
-            <div className="ABOUT-BUTTON"
-                 onClick={() => navigate("/about")}
-            >
-                <span>About me</span>
-                <AboutIcon/>
+
+            <div className="flex items-center space-4">
+                <div className="flex items-center mx"
+                     onClick={() => navigate("/contact")}
+                >
+                    <span className="ml-1">Contact</span>
+                    <ContactIcon/>
+                </div>
+                <div className="flex items-center"
+                     onClick={() => navigate("/about")}
+                >
+                    <span className="ml-1">About me</span>
+                    <AboutIcon/>
+                </div>
             </div>
         </div>
     );
