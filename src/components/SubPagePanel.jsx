@@ -17,7 +17,7 @@ function SubPagePanel({ image_file, title, description, link, button_text}) {
                             <span className="text-lg">{description}</span>
                         </div>
 
-                        <div className="flex flex-none justify-center items-center h-1/6">
+                        <div className="flex flex-none items-center h-1/5 w-full p-1">
                             <button
                                 className="dark:bg-[#111111] w-full h-full rounded-2xl"
                                 type="button"
@@ -36,7 +36,7 @@ function SubPagePanel({ image_file, title, description, link, button_text}) {
                             <span className="text-lg">{description}</span>
                         </div>
 
-                        <div className="h-1/3 flex-none justify-center items-center">
+                        <div className="h-1/3 flex-none justify-center items-center p-1">
                             <button
                                 className="dark:bg-[#111111] w-full h-full rounded-2xl"
                                 type="button"
