@@ -2,13 +2,13 @@ import MenuBar from "../components/MenuBar.jsx";
 
 function About() {
     return (
-        <div className="ABOUT-WRAPPER">
+        <>
             <MenuBar />
-            Hello!<br/>
-            I am Ember, at least that is what I go by in internet!<br/>
-            I am Polish teen who likes to code and make hardware.<br/>
-            I hope you will like my projects!
-        </div>
+            <div className="pt-14">
+                Hello!<br/><br/>
+                I am Ember, at least that is what I go by on the internet. I am Polish teen who likes to code and make hardware. I hope you will like my projects!
+            </div>
+        </>
     )
 }
 
