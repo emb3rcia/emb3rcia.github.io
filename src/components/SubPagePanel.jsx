@@ -4,31 +4,49 @@ function SubPagePanel({ image_file, title, description, link, button_text}) {
     const navigate = useNavigate();
 
     return (
-        <div className="border-2 rounded-2xl m-5 gap-6 bg-[#d4d2d2] dark:bg-[#171717]">
-            <div className="flex">
-                {image_file ? (
-                    <div className="flex-1 min-h-0 items">
-                        <img src={image_file} alt="SubPage image" className="h-full w-full object-contain" />
+        <div className="flex border-4 border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full box-border">
+            {image_file ? (
+                <>
+                    <div className="h-full shrink-0 grow-0 w-1/2 overflow-hidden">
+                        <img src={image_file} alt="SubPage image" className="h-full w-full object-cover rounded-l-2xl" />
                     </div>
-                ) : null}
-                <div className="w-1/2">
-                    <div className="CONTENTS">
-                        <span className="TITLE-NAME">{title}</span>
-                        <br/>
-                        <span className="DESCRIPTION">{description}</span>
-                    </div>
+                    <div className="flex flex-col h-full w-1/2 shrink-0">
+                        <div className="flex-1 p-2">
+                            <span className="font-bold text-xl">{title}</span>
+                            <br/>
+                            <span className="text-lg">{description}</span>
+                        </div>
 
-                    <div className="ACTIONS">
-                        <button
-                            className="BUTTON-WRAPPER"
-                            type="button"
-                            onClick={() => navigate(link)}
-                        >
-                            {button_text}
-                        </button>
+                        <div className="flex flex-none justify-center items-center h-1/6">
+                            <button
+                                className="dark:bg-[#111111] w-full h-full rounded-2xl"
+                                type="button"
+                                onClick={() => navigate(link)}
+                            >
+                                {button_text}
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </>
+                ) : (
+                    <div className="flex flex-col h-full w-full p-2">
+                        <div className="flex-1">
+                            <span className="font-bold text-xl">{title}</span>
+                            <br/>
+                            <span className="text-lg">{description}</span>
+                        </div>
+
+                        <div className="h-1/3 flex-none justify-center items-center">
+                            <button
+                                className="dark:bg-[#111111] w-full h-full rounded-2xl"
+                                type="button"
+                                onClick={() => navigate(link)}
+                            >
+                                {button_text}
+                            </button>
+                        </div>
+                    </div>
+            )}
         </div>
     );
 }
