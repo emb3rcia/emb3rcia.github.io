@@ -2,7 +2,7 @@ import GitHubIcon from "../assets/icons/GitHubIcon.jsx";
 
 function ProjectPanel({image_file, type, used, title, description, link}) {
     return (
-        <div className="flex flex-col border-4 border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full items-center box-content">
+        <div className="flex flex-col border-4 border-[#C4C4C4] dark:border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full items-center box-content">
             <div className="flex flex-col h-full w-full">
                 <div className="h-2/5 grow overflow-hidden">
                     <img src={image_file} alt={"Project image"} className="h-full w-full object-cover rounded-t-2xl"/>
@@ -24,7 +24,7 @@ function ProjectPanel({image_file, type, used, title, description, link}) {
                     </span>
                 </div>
                 <div className="flex items-center h-1/5 w-full p-1">
-                    <button className="dark:bg-[#111111] w-full h-full rounded-2xl items-center justify-center"
+                    <button className="bg-[#C4C4C4] dark:bg-[#111111] w-full h-full rounded-2xl items-center justify-center cursor-pointer"
                             type="button"
                             onClick={() => window.open(link, '_blank', 'noopener,noreferrer')}
                     >

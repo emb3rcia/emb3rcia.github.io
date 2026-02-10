@@ -4,7 +4,7 @@ function SubPagePanel({ image_file, title, description, link, button_text}) {
     const navigate = useNavigate();
 
     return (
-        <div className="flex border-4 border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full box-border">
+        <div className="flex border-4 border-[#C4C4C4] dark:border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full box-border">
             {image_file ? (
                 <>
                     <div className="h-full shrink-0 grow-0 w-1/2 overflow-hidden">
@@ -19,7 +19,7 @@ function SubPagePanel({ image_file, title, description, link, button_text}) {
 
                         <div className="flex flex-none items-center h-1/5 w-full p-1">
                             <button
-                                className="dark:bg-[#111111] w-full h-full rounded-2xl"
+                                className="bg-[#C4C4C4] dark:bg-[#111111] w-full h-full rounded-2xl cursor-pointer"
                                 type="button"
                                 onClick={() => navigate(link)}
                             >

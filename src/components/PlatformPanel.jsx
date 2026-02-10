@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 function PlatformPanel({IconComponent, icon_alt, platform_text, platform_user, button_link, button_text}) {
     return (
-        <div className="flex flex-col border-4 border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full box-border items-center">
+        <div className="flex flex-col border-4 border-[#C4C4C4] dark:border-[#111111] rounded-2xl bg-[#d4d2d2] dark:bg-[#171717] h-full box-border items-center">
             <div className="w-24 h-24 text-gray-800 dark:text-white">
                 <IconComponent
                     aria-label={icon_alt}
@@ -16,7 +16,7 @@ function PlatformPanel({IconComponent, icon_alt, platform_text, platform_user, b
                 <button
                     type="button"
                     onClick={() => window.open(button_link, '_blank', 'noopener,noreferrer')}
-                    className="dark:bg-[#111111] w-full h-full rounded-2xl"
+                    className="bg-[#C4C4C4] dark:bg-[#111111] bg  w-full h-full rounded-2xl cursor-pointer"
                 >
                     {button_text}
                 </button>
