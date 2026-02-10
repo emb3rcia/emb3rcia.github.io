@@ -1,10 +1,12 @@
 import PlatformPanel from "../components/PlatformPanel.jsx";
 import DiscordIcon from "../assets/icons/DiscordIcon.jsx";
 import GitHubIcon from "../assets/icons/GitHubIcon.jsx";
+import MenuBar from "../components/MenuBar.jsx";
 
 function Contact() {
     return (
         <div className="CONTACT-WRAPPER">
+            <MenuBar />
             <PlatformPanel
                 IconComponent={DiscordIcon}
                 icon_alt={"Discord"}

@@ -1,6 +1,9 @@
+import MenuBar from "../components/MenuBar.jsx";
+
 function Credits() {
     return (
         <div className="CREDITS-WRAPPER">
+            <MenuBar />
             Icons used in this portfolio are provided by{' '}
             <a
                 href="https://flowbite.com/icons/"

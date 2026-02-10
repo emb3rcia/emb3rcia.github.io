@@ -1,6 +1,9 @@
+import MenuBar from "../components/MenuBar.jsx";
+
 function About() {
     return (
         <div className="ABOUT-WRAPPER">
+            <MenuBar />
             Hello!<br/>
             I am Ember, at least that is what I go by in internet!<br/>
             I am Polish teen who likes to code and make hardware.<br/>

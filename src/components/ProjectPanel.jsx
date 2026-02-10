@@ -14,12 +14,12 @@ function ProjectPanel({image_file, type, used, title, description, link}) {
                     {description}
                 </p>
                 <div className="META">
-                    <p className="TYPE">
+                    <span className="TYPE">
                         {type === 'hardware' ? 'Platform: ' : 'Language: '}
-                    </p>
-                    <p className="USED">
+                    </span>
+                    <span className="USED">
                         {used}
-                    </p>
+                    </span>
                 </div>
 
             </div>

@@ -1,9 +1,11 @@
 import organizerImage from "../assets/images/spark-organizer.png";
 import ProjectPanel from "../components/ProjectPanel.jsx";
+import MenuBar from "../components/MenuBar.jsx";
 
 function SoftwareProjects() {
     return (
         <div className="SOFTWARE-WRAPPER">
+            <MenuBar />
             <ProjectPanel
                 image_file={organizerImage}
                 title="spark-organizer"
