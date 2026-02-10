@@ -1,4 +1,4 @@
-import stm32Image from "../assets/images/stm32-module.png";
+import sampleImage from "../assets/images/hardware.png";
 import ProjectPanel from "../components/ProjectPanel.jsx";
 import MenuBar from "../components/MenuBar.jsx";
 
@@ -7,7 +7,7 @@ function HardwareProjects() {
         <div className="HARDWARE-WRAPPER">
             <MenuBar />
             <ProjectPanel
-                image_file={stm32Image}
+                image_file={sampleImage}
                 title="STM32 Module/Devboard"
                 description="STM32 based module/development board with many goldpins."
                 type="hardware"
