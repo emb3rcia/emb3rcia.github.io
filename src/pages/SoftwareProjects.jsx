@@ -1,8 +1,10 @@
 import sampleImage from "../assets/images/software.png";
 import ProjectPanel from "../components/ProjectPanel.jsx";
 import MenuBar from "../components/MenuBar.jsx";
+import useDocumentTitle from "../hooks/useDocumentTitle.js";
 
 function SoftwareProjects() {
+    useDocumentTitle("Software | Ember")
     return (
         <>
             <MenuBar />

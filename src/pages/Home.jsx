@@ -3,8 +3,10 @@ import HardwareImage from '../assets/images/hardware.png'
 
 import SubPagePanel from "../components/SubPagePanel.jsx";
 import MenuBar from "../components/MenuBar.jsx";
+import useDocumentTitle from "../hooks/useDocumentTitle.js";
 
 function Home() {
+    useDocumentTitle("Home | Ember")
     return (
         <div>
             <MenuBar />

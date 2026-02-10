@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>emb3rcia.github.io</title>
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        const hash = window.location.hash;
+
+        // Only redirect if path is not "/" and no hash exists
+        if (path !== '/' && !hash) {
+          // Remove trailing slash
+          const cleanPath = path.replace(/\/$/, '');
+          window.location.replace('/#' + cleanPath + window.location.search);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

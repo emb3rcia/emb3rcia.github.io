@@ -1,6 +1,8 @@
 import MenuBar from "../components/MenuBar.jsx";
+import useDocumentTitle from "../hooks/useDocumentTitle.js";
 
 function About() {
+    useDocumentTitle("About | Ember")
     return (
         <>
             <MenuBar />

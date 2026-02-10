@@ -3,8 +3,10 @@ import DiscordIcon from "../assets/icons/DiscordIcon.jsx";
 import GitHubIcon from "../assets/icons/GitHubIcon.jsx";
 import MenuBar from "../components/MenuBar.jsx";
 import MailIcon from "../assets/icons/MailIcon.jsx";
+import useDocumentTitle from "../hooks/useDocumentTitle.js";
 
 function Contact() {
+    useDocumentTitle("Contact | Ember")
     return (
         <>
             <MenuBar />

@@ -1,8 +1,10 @@
 import sampleImage from "../assets/images/hardware.png";
 import ProjectPanel from "../components/ProjectPanel.jsx";
 import MenuBar from "../components/MenuBar.jsx";
+import useDocumentTitle from "../hooks/useDocumentTitle.js";
 
 function HardwareProjects() {
+    useDocumentTitle("Hardware | Ember")
     return (
         <>
             <MenuBar />
