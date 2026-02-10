@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>emb3rcia</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="site">
+        <div class="menu">
+            <img src="home.svg" onclick="window.location.href='/'" class="redirect"></img>
+            <span onclick="window.location.href='/about'" class="redirect">About me</span>
+            <span onclick="window.location.href='/contact'" class="redirect">Contact</span>
+        </div>
+        <div class="content">
+            <h1 class="main-title">emb3rcia | Home</h1>
+            <div class="projects-div">
+                <h1 class="section">Projects</h1>
+                <div class="section-sub" id="hardware-div">
+                    <h1 class="section-text">Hardware</h1>
+                    <p class="section-text">On this page, you can see all the hardware projects I made! It includes SoM carrier board, keyboards and more!</p>
+                    <button onclick="window.location.href='/hardware'" class="redirect-button" id="view-hardware">View Hardware Projects</button>
+                </div>
+                <div class="section-sub" id="software-div">
+                    <h1 class="section-text">Software</h1>
+                    <p class="section-text">On this page, you can see all the software projects I made! It includes to-do app, this site, and more!</p>
+                    <button onclick="window.location.href='/software'" class="redirect-button" id="view-software">View Software Projects</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
