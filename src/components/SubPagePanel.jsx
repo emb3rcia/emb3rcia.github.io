@@ -4,7 +4,7 @@ function SubPagePanel({ image_file, title, description, link, button_text}) {
     const navigate = useNavigate();
 
     return (
-        <div className="PLATFORM-WRAPPER">
+        <div className="border-2 rounded-2xl m-5 w-max">
             {image_file ? (
                 <div className="IMAGE-WRAPPER">
                     <img src={image_file} alt="SubPage image" />

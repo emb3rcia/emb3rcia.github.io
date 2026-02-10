@@ -6,28 +6,25 @@ import HomeIcon from "../assets/icons/HomeIcon.jsx";
 
 function MenuBar() {
     const navigate = useNavigate();
-//w-full h-32px flex justify-center-safe space
     return (
-        <div className="flex h-32 w-full bg-[#d4d2d2] dark:bg-[#111111] ">
+        <div className="fixed flex justify-center h-12 items-center w-full bg-[#d4d2d2] dark:bg-[#111111]">
 
-            <div className="justify-center h-32 static right-0"
-                     onClick={() => navigate("/")}
+            <div className="absolute left-1"
+                 onClick={() => navigate("/")}
             >
                 <HomeIcon/>
             </div>
 
-            <div className="justify-center">
-                <span className="">Ember</span>
-            </div>
+            <span className="">Ember</span>
 
-            <div className="flex space-x-4">
-                <div className="flex justify-center space-x-4"
+            <div className="flex absolute right-1">
+                <div className="flex space-x-2 "
                      onClick={() => navigate("/contact")}
                 >
                     <span className="ml-1">Contact</span>
                     <ContactIcon/>
                 </div>
-                <div className="flex justify-center space-x-4"
+                <div className="flex space-x-2 "
                      onClick={() => navigate("/about")}
                 >
                     <span className="ml-1">About me</span>
