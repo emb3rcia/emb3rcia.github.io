@@ -10,7 +10,7 @@ function Contact() {
     return (
         <>
             <MenuBar />
-            <div className="pt-14 grid grid-cols-[20vw_20vw_20vw] justify-between p-3 grid-rows-[40vh]">
+            <div className="pt-14 grid grid-cols-2 gap-3 p-3 auto-rows-[40vh]">
                 <PlatformPanel
                     IconComponent={DiscordIcon}
                     icon_alt={"Discord"}
@@ -27,14 +27,16 @@ function Contact() {
                     button_text={"See my GitHub profile!"}
                     button_link={"https://github.com/emb3rcia"}
                 />
-                <PlatformPanel
+                <div className="col-span-2">
+                    <PlatformPanel
                     IconComponent={MailIcon}
                     icon_alt={"E-Mail"}
                     platform_text={"E-Mail"}
                     platform_user={"sixemod@protonmail.com"}
                     button_text={"Write me an e-mail!"}
                     button_link={"mailto:sixemod@protonmail.com"}
-                />
+                    />
+                </div>
             </div>
         </>
     )

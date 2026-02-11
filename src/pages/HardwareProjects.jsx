@@ -14,7 +14,7 @@ function HardwareProjects() {
                     <ProjectPanel
                         image_file={stm32Image}
                         title="stm32-module"
-                        description="STM32-based module/development board with 60 goldpins."
+                        description="STM32-based development board with 60 goldpins."
                         type="hardware"
                         used="STM32"
                         link="https://github.com/emb3rcia/spark-organizer"

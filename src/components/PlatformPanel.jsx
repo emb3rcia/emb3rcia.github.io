@@ -9,8 +9,8 @@ function PlatformPanel({IconComponent, icon_alt, platform_text, platform_user, b
                 />
             </div>
             <div className="flex flex-col grow items-center">
-                <span className="font-bold text-3xl">{platform_text}</span>
-                <span className="text-2xl">{platform_user}</span>
+                <span className="font-bold text-xl md:text-3xl">{platform_text}</span>
+                <span className="text-lg md:text-2xl">{platform_user}</span>
             </div>
             <div className="flex flex-none items-center h-1/5 w-full p-1">
                 <button

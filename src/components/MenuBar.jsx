@@ -15,16 +15,12 @@ function MenuBar() {
                 <HomeIcon/>
             </div>
 
-            <div className="flex items-center">
-                <span>Ember</span>
-            </div>
-
             <div className="flex absolute right-1 items-center space-x-2">
                 <div className="flex space-x-2 items-center cursor-pointer"
                      onClick={() => navigate("/credits")}
                 >
                     <span className="ml-1">Credits</span>
-                    <span className="font-bold text-3xl pb-1 leading-none">©</span>
+                    <span className="font-bold text-xl md:text-3xl md:pb-1 leading-none">©</span>
                 </div>
                 <div className="flex space-x-2 cursor-pointer"
                      onClick={() => navigate("/contact")}
