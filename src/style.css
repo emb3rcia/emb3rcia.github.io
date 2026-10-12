@@ -1,7 +1,4 @@
 @import "tailwindcss";
-#taskbar {
-
-}
 #desktop {
   background-image: url('./assets/wallpaper.webp');
   background-position: center;
